@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>War Games for Economists</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>War Games for Economists</h1>
+    <p>Interactive Trade Simulation Platform</p>
+  </header>
+
+  <!-- Main container for the sidebar and map -->
+  <main>
+    <section id="sidebar">
+      <h2>Simulation Parameters</h2>
+
+      <!-- Country selection -->
+      <div>
+        <label for="country1">Select Country 1:</label>
+        <select id="country1">
+          <option value="USA">USA</option>
+          <option value="Mexico">Mexico</option>
+          <option value="China">China</option>
+          <option value="Japan">Japan</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="country2">Select Country 2:</label>
+        <select id="country2">
+          <option value="USA">USA</option>
+          <option value="Mexico">Mexico</option>
+          <option value="China">China</option>
+          <option value="Japan">Japan</option>
+        </select>
+      </div>
+
+      <!-- Variables input -->
+      <div>
+        <label for="tariff">Tariff Increase (%):</label>
+        <input type="number" id="tariff" placeholder="Enter %">
+      </div>
+
+      <div>
+        <label for="gdpChange">GDP Change (%):</label>
+        <input type="number" id="gdpChange" placeholder="Enter %">
+      </div>
+
+      <div>
+        <label for="inflation">Inflation Rate Increase (%):</label>
+        <input type="number" id="inflation" placeholder="Enter %">
+      </div>
+
+      <!-- Submit button -->
+      <button id="run-simulation">Run Simulation</button>
+    </section>
+
+    <section id="map-container">
+      <!-- Placeholder for the world map -->
+      <div id="world-map"></div>
+    </section>
+  </main>
+
+  <!-- Placeholder for results -->
+  <section id="results">
+    <h2>Simulation Results</h2>
+    <div id="results-container"></div>
+  </section>
+
+  <!-- Link to external JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,87 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background: #0078d4;
+    color: white;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  /* Main layout */
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Adjusts the spacing between sidebar and map */
+  }
+  
+  /* Sidebar */
+  #sidebar {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px;
+  }
+  
+  #sidebar h2 {
+    margin-top: 0;
+  }
+  
+  /* Map container */
+  #map-container {
+    flex: 2;
+    height: 500px;
+    border: 1px solid #ddd;
+    background-color: #eaeaea;
+  }
+  
+  /* Results section */
+  #results {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  #results-container {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    height: 200px;
+    overflow-y: auto;
+  }
+  
+  /* Buttons */
+  button {
+    background: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background: #005a9e;
+  }
+  
+  
